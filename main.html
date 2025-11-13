@@ -9,22 +9,31 @@
   <body>
     <div class="settings-card">
       <h1>Game Settings</h1>
-      <label>
-        <input type="checkbox" />
-        Sound Effects
-      </label>
-      <label>
-        <input type="checkbox" />
-        Background Music
-      </label>
-      <label>
-        <input type="checkbox" />
-        Hard Mode
-      </label>
-      <label>
-        <input type="checkbox" />
-        Haptic Feedback
-      </label>
+      <fieldset>
+        <legend>Game Preferences</legend>
+        <label for="sound-effects">
+          <input type="checkbox" id="sound-effects" />
+          Sound Effects <span class="keyboard-hint">(S)</span>
+        </label>
+        <label for="background-music">
+          <input type="checkbox" id="background-music" />
+          Background Music <span class="keyboard-hint">(M)</span>
+        </label>
+        <label for="hard-mode">
+          <input type="checkbox" id="hard-mode" />
+          Hard Mode <span class="keyboard-hint">(H)</span>
+        </label>
+        <label for="haptic-feedback">
+          <input type="checkbox" id="haptic-feedback" />
+          Haptic Feedback <span class="keyboard-hint">(F)</span>
+        </label>
+      </fieldset>
+      <div class="button-container">
+        <button type="button" id="save-settings-btn" class="btn btn-primary">Save Settings</button>
+        <button type="button" id="reset-settings-btn" class="btn btn-secondary">Reset</button>
+      </div>
     </div>
+    <div id="toast-container" class="toast-container"></div>
+    <script src="script.js"></script>
   </body>
 </html>
