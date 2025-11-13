@@ -74,3 +74,41 @@ Now that you can see your checkbox again, you are going to finalize some styling
 Then give it a background-color of white to make the center of your checkbox stand out from the background of the container.
 
 Since you are going to be setting up a custom transition for when a user clicks on the checkboxes, set a transition with the value of all and 0.3s so that the transition happens smoothly over 0.3 seconds rather than instantly.
+
+Step 12
+Next, set a vertical-align property with a value of middle.
+
+The vertical-align property controls how inline or inline-block elements align vertically with the surrounding text or other inline elements. It's often used to adjust the vertical position of elements like images, icons, or text within a line.
+
+Then finalize your checkbox with a margin property of 15px.
+
+Step 13
+In a previous lesson, you learned about pseudo-classes and pseudo-elements in CSS. You are going to apply that knowledge now by creating a combined type selector with pseudo-class selector.
+
+First, start with the format for the type selector by setting it as input[type="checkbox"] and appending :checked to the end of it.
+
+Next, give it a background-color with the value of #f1be32.
+
+And lastly, set the border-color to have a value of #e2a60d.
+
+Step 14
+Now that your checkboxes change color when the user clicks them, you are going to apply some styling to make it a little more obvious that the checkbox has been selected.
+
+First, create a new type selector of input[type="checkbox"] with the previous pseudo-class selector of :checked and add the pseudo-element selector of ::after. This will specifically target what happens after the user has checked the box.
+
+Next, add content with the value of "✓".
+
+Step 15
+In the declaration for the input[type="checkbox"]:checked::after selector, set the display to block. Setting your display property as block makes the element a block-level element, meaning that it takes up the full width of its container and starts on a new line, allowing you to control its width, height, and spacing more easily.
+
+Next, set text-align to center. This will center the inline content (like text, or inline elements) horizontally within the block. The block will still take up the full width of its container but everything inside it will be aligned to the center.
+
+Step 16
+To finish setting up the visual effect of your checkbox, set the font-weight property with a value of bold. This will increase the visibility of the checkmark.
+
+Now that this is easier to see, change the color to a value of white. This is going to change the color of the checkmark within the checkbox when it is checked.
+
+Lastly, alter the line-height to a value of 20px.
+
+With that, you have completed the game settings panel!
+
